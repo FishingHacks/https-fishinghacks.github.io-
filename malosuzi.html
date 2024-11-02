@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+@font-face {
+    font-family: 'meow';
+    font-style: normal;
+    font-weight: 1000;
+    src: url(data:font/ttf;base64,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);
+}
+
+html, head, body {
+    padding: 0;
+    margin: 0;
+    background: #18181b;
+    color: white;
+}
+
+p.output {
+    font-family: meow, sans-serif;
+    font-size: xxx-large;
+    white-space: pre;
+    margin: 0px;
+    width: min-content;
+}
+
+canvas {
+    image-rendering: pixelated;
+}
+        </style>
+        <script>
+const vowels = {
+    a: "◌́ ".charAt(1),
+    e: "◌̀ ".charAt(1),
+    i: "◌̂ ".charAt(1),
+    o: "◌̌ ".charAt(1),
+    u: "◌̈ ".charAt(1),
+}
+const long_vowel = "◌̄".charAt(1);
+
+let input;
+let output;
+let canvas;
+
+const consonants = ["m", "n", "t", "d", "s", "z", "f", "v", "l", "r", "h", "k", "g", "x"];
+
+function is_vowel(char) {
+    return char in vowels;
+}
+
+function is_consonant(char) {
+    return consonants.includes(char);
+}
+
+function handle_keypress(ev) {
+    const arr = input.value.toLowerCase().trim().replaceAll("kh", "x").replaceAll("sh", "h").split("");
+    let idx = 0;
+    let parsed = "";
+
+    while (idx < arr.length) {
+        let next_char = arr[idx];
+        if (next_char == ' ') {
+            idx++;
+            parsed += "  ";
+            continue;
+        } else if (is_consonant(next_char)) {
+            idx++;
+            parsed += next_char;
+        } else if (is_vowel(next_char)) {
+            parsed += ","
+        } else {
+            idx++;
+            parsed += next_char;
+            continue;
+        }
+        let char = arr[idx];
+        if (!is_vowel(char)) continue;
+        if (char in vowels) parsed += vowels[char];
+        else throw new Error("unreachable");
+        idx++;
+        if (arr[idx] == ':' || arr[idx] == long_vowel) {
+            parsed += long_vowel;
+            idx++;
+        }
+    }
+
+    output.textContent = parsed;
+
+    let ratio = window.devicePixelRatio;
+    let width = output.clientWidth;
+    let height = output.clientHeight + 10;
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = width + "px";
+    canvas.style.height = height + "px";
+    let ctx = canvas.getContext("2d");
+    ctx.scale(ratio, ratio);
+    ctx.fillStyle = "#18181b";
+    ctx.fillRect(0, 0, width, height);
+    ctx.fillStyle = "white";
+    ctx.imageSmoothingEnabled = false;
+    ctx.font = "42px meow";
+    ctx.textRendering = "optimizeSpeed";
+    ctx.fillText(parsed, 0, height - 10);
+}
+
+function ready() {
+    input = document.getElementsByClassName("input")[0];
+    input.addEventListener("input", handle_keypress);
+    output = document.getElementsByClassName("output")[0];
+    canvas = document.getElementsByClassName("canvas-output")[0];
+}
+        </script>
+    </head>
+    <body onload="ready()">
+        <div style="display: flex; align-items: center; padding: 0 1em">
+            <p>Input: </p>
+            <input class="input" style="margin-left: .5em;" />
+        </div>
+        <p class="output"></p>
+	<canvas class="canvas-output" width="1" height="0" />
+    </body>
+</html>
